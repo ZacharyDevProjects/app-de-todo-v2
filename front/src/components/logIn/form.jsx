@@ -5,7 +5,7 @@ import "font-awesome/css/font-awesome.min.css";
 
 function Login() {
     const navigate = useNavigate();
-  const [rememberMe, setRememberMe] = useState(false);
+  const [rememberMe, setRememberMe] = useState(true);
 
   const handleRememberMeChange = (event) => {
     setRememberMe(event.target.checked);
