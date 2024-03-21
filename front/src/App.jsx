@@ -1,5 +1,5 @@
 import "./App.css";
-import Acceuil from "./components/acceuil/form";
+import Acceuil from "./components/acceuil/acceuil";
 import Header from "./components/header/header";
 import Login from "./components/logIn/form";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
