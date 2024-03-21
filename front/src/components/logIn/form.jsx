@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 
 function Login() {
+    const navigate = useNavigate();
   const [rememberMe, setRememberMe] = useState(false);
 
   const handleRememberMeChange = (event) => {
@@ -11,13 +13,12 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Gérez la soumission du formulaire ici
+    navigate("/todo");
     console.log("Form submitted");
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      {/* Le reste du code reste inchangé */}
       <div className="form-outline mb-4">
         <input
           type="email"
@@ -67,7 +68,6 @@ function Login() {
         Sign in
       </button>
 
-      {/* Le reste du code reste inchangé */}
     </form>
   );
 }
