@@ -1,8 +1,10 @@
-function todo() {
+import Todo from "./todo";
+
+function ListeOfTodo() {
     return (
         <div>
-            salut
+            <Todo/>
         </div>
     )
 }
-export default todo;
+export default ListeOfTodo;
