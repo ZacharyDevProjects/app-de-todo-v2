@@ -2,7 +2,7 @@ import "./App.css";
 import Acceuil from "./components/acceuil/acceuil";
 import Header from "./components/header/header";
 import Login from "./components/logIn/form";
-import ListeOfTodo from "./components/toDo/listeOfToDo";
+import ListeOfTodo from "./components/toDo/listeOfToDoPerso";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 
