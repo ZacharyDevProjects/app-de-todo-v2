@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 
 function Login() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [rememberMe, setRememberMe] = useState(true);
 
   const handleRememberMeChange = (event) => {
@@ -20,27 +20,27 @@ function Login() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-outline mb-4">
+        <label className="form-label" htmlFor="form2Example1">
+          Email address
+        </label>
         <input
           type="email"
           id="form2Example1"
           className="form-control"
           required
         />
-        <label className="form-label" htmlFor="form2Example1">
-          Email address
-        </label>
       </div>
 
       <div className="form-outline mb-4">
+        <label className="form-label" htmlFor="form2Example2">
+          Password
+        </label>
         <input
           type="password"
           id="form2Example2"
           className="form-control"
           required
         />
-        <label className="form-label" htmlFor="form2Example2">
-          Password
-        </label>
       </div>
 
       <div className="row mb-4">
@@ -67,7 +67,6 @@ function Login() {
       <button type="submit" className="btn btn-primary btn-block mb-4">
         Sign in
       </button>
-
     </form>
   );
 }
